@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{619C5565-3C8A-472C-A9A0-B75DB518323D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>_OLC1_Tarea3</RootNamespace>
+    <AssemblyName>[OLC1]Tarea3</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Irony">
+      <HintPath>..\..\..\..\..\..\Librerias\irony\Irony.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="com.analizador\Gramatica.cs" />
+    <Compile Include="com.analizador\Sintactico.cs" />
+    <Compile Include="com.vista\AlertaAnalisis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="com.vista\AlertaAnalisis.Designer.cs">
+      <DependentUpon>AlertaAnalisis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="com.vista\AlertaErrores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="com.vista\AlertaErrores.Designer.cs">
+      <DependentUpon>AlertaErrores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="com.vista\Controlador.cs" />
+    <Compile Include="com.vista\ControlDOT.cs" />
+    <Compile Include="com.vista\Error.cs" />
+    <Compile Include="com.vista\MenuArchivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="com.vista\MenuArchivo.Designer.cs">
+      <DependentUpon>MenuArchivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="com.vista\MenuErrores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="com.vista\MenuErrores.Designer.cs">
+      <DependentUpon>MenuErrores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="com.vista\VentanaPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="com.vista\VentanaPrincipal.Designer.cs">
+      <DependentUpon>VentanaPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="com.vista\AlertaAnalisis.resx">
+      <DependentUpon>AlertaAnalisis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="com.vista\AlertaErrores.resx">
+      <DependentUpon>AlertaErrores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="com.vista\MenuArchivo.resx">
+      <DependentUpon>MenuArchivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="com.vista\MenuErrores.resx">
+      <DependentUpon>MenuErrores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="com.vista\VentanaPrincipal.resx">
+      <DependentUpon>VentanaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

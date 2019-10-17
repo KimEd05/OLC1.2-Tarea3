@@ -30,14 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VentanaPrincipal));
             this.labelColumna = new System.Windows.Forms.Label();
-            this.Valor3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Valor2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Columna = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Linea = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.tabSimbolos = new System.Windows.Forms.TabPage();
             this.buttonMinimize = new System.Windows.Forms.Button();
             this.buttonClose = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -55,8 +47,6 @@
             this.logoPanel = new System.Windows.Forms.Panel();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.buttonPanel = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.tabSimbolos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabConsola.SuspendLayout();
             this.tabSalida.SuspendLayout();
@@ -75,98 +65,6 @@
             this.labelColumna.Size = new System.Drawing.Size(56, 15);
             this.labelColumna.TabIndex = 11;
             this.labelColumna.Text = "Columna: ";
-            // 
-            // Valor3
-            // 
-            this.Valor3.Frozen = true;
-            this.Valor3.HeaderText = "";
-            this.Valor3.MinimumWidth = 153;
-            this.Valor3.Name = "Valor3";
-            this.Valor3.ReadOnly = true;
-            this.Valor3.Width = 153;
-            // 
-            // Valor2
-            // 
-            this.Valor2.Frozen = true;
-            this.Valor2.HeaderText = "";
-            this.Valor2.MinimumWidth = 153;
-            this.Valor2.Name = "Valor2";
-            this.Valor2.ReadOnly = true;
-            this.Valor2.Width = 153;
-            // 
-            // Valor
-            // 
-            this.Valor.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.Valor.FillWeight = 200F;
-            this.Valor.Frozen = true;
-            this.Valor.HeaderText = "Valor";
-            this.Valor.MinimumWidth = 153;
-            this.Valor.Name = "Valor";
-            this.Valor.ReadOnly = true;
-            this.Valor.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Valor.Width = 153;
-            // 
-            // ID
-            // 
-            this.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.ID.Frozen = true;
-            this.ID.HeaderText = "ID";
-            this.ID.MinimumWidth = 180;
-            this.ID.Name = "ID";
-            this.ID.ReadOnly = true;
-            this.ID.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.ID.Width = 180;
-            // 
-            // Columna
-            // 
-            this.Columna.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.Columna.Frozen = true;
-            this.Columna.HeaderText = "Columna";
-            this.Columna.MinimumWidth = 95;
-            this.Columna.Name = "Columna";
-            this.Columna.ReadOnly = true;
-            this.Columna.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Columna.Width = 95;
-            // 
-            // Linea
-            // 
-            this.Linea.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.Linea.Frozen = true;
-            this.Linea.HeaderText = "Línea";
-            this.Linea.MinimumWidth = 95;
-            this.Linea.Name = "Linea";
-            this.Linea.ReadOnly = true;
-            this.Linea.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Linea.Width = 95;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Linea,
-            this.Columna,
-            this.ID,
-            this.Valor,
-            this.Valor2,
-            this.Valor3});
-            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(865, 171);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // tabSimbolos
-            // 
-            this.tabSimbolos.Controls.Add(this.dataGridView1);
-            this.tabSimbolos.Location = new System.Drawing.Point(4, 24);
-            this.tabSimbolos.Name = "tabSimbolos";
-            this.tabSimbolos.Padding = new System.Windows.Forms.Padding(3);
-            this.tabSimbolos.Size = new System.Drawing.Size(871, 181);
-            this.tabSimbolos.TabIndex = 1;
-            this.tabSimbolos.Text = "Tabla de Símbolos";
-            this.tabSimbolos.UseVisualStyleBackColor = true;
             // 
             // buttonMinimize
             // 
@@ -228,7 +126,6 @@
             // tabSalida
             // 
             this.tabSalida.Controls.Add(this.tabConsola);
-            this.tabSalida.Controls.Add(this.tabSimbolos);
             this.tabSalida.Font = new System.Drawing.Font("Dream Orphans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabSalida.Location = new System.Drawing.Point(203, 444);
             this.tabSalida.Name = "tabSalida";
@@ -242,9 +139,9 @@
             this.label3.Font = new System.Drawing.Font("Dream Orphans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(73, 20);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(440, 22);
+            this.label3.Size = new System.Drawing.Size(414, 22);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Proyecto 2 [Organización de Lenguajes y Compiladores 1]";
+            this.label3.Text = "Tarea 3 [Organización de Lenguajes y Compiladores 1]";
             // 
             // labelLinea
             // 
@@ -317,7 +214,7 @@
             this.buttonReportes.Name = "buttonReportes";
             this.buttonReportes.Size = new System.Drawing.Size(171, 44);
             this.buttonReportes.TabIndex = 2;
-            this.buttonReportes.Text = "      Reportes";
+            this.buttonReportes.Text = "      Generar AST";
             this.buttonReportes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonReportes.UseVisualStyleBackColor = true;
             this.buttonReportes.Click += new System.EventHandler(this.buttonReportes_Click);
@@ -387,8 +284,6 @@
             this.Name = "VentanaPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "VentanaPrincipal";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.tabSimbolos.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabConsola.ResumeLayout(false);
             this.tabSalida.ResumeLayout(false);
@@ -406,19 +301,10 @@
         #endregion
 
         private System.Windows.Forms.Label labelColumna;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Valor3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Valor2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Valor;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Columna;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Linea;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TabPage tabSimbolos;
         private System.Windows.Forms.Button buttonMinimize;
         private System.Windows.Forms.Button buttonClose;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.TabPage tabConsola;
-        private System.Windows.Forms.RichTextBox richConsola;
         private System.Windows.Forms.TabControl tabSalida;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label labelLinea;
@@ -431,5 +317,6 @@
         private System.Windows.Forms.Panel logoPanel;
         public System.Windows.Forms.TabControl tabControl;
         private System.Windows.Forms.Panel buttonPanel;
+        public System.Windows.Forms.RichTextBox richConsola;
     }
 }

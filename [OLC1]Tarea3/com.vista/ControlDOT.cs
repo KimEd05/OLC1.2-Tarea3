@@ -15,7 +15,7 @@ namespace _OLC1_Tarea3.com.vista
         public static String getDOT(ParseTreeNode root)
         {
             grafo = "digraph G{\n";
-            grafo += "node[style=filled, fillcolor=\"tan: seashell\", fontname=\"Museo Sans For Dell\"];\n";
+            grafo += "node[style=filled, fillcolor=\"tan: seashell\", fontname=\"Krempeng Sans\", fontsize=20.0];\n";
             grafo += "nodo0[label=\"" + escape(root.ToString()) + "\"];\n";
             cont = 1;
             recorrerAST("nodo0", root);

@@ -15,6 +15,9 @@ namespace _OLC1_Tarea3.com.vista
         public AlertaErrores()
         {
             InitializeComponent();
+            labelLexicos.Text = "Errores Léxicos: " + Program.erroresLexicos.Count;
+            labelSintacticos.Text = "Errores Sintácticos: " + Program.erroresSintacticos.Count;
+            labelSemanticos.Text = "Errores Semánticos: " + Program.erroresSemanticos.Count;
         }
 
         private void buttonOK_Click(object sender, EventArgs e)

@@ -43,6 +43,7 @@ namespace _OLC1_Tarea3
             erroresSintacticos = new List<Error>();
             erroresSemanticos = new List<Error>();
             pestanaActual = "";
+            ventanaPrincipal.richConsola.Clear();
         }
     }
 }

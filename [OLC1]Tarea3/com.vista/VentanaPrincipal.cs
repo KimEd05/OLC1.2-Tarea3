@@ -1,8 +1,11 @@
-﻿using System;
+﻿using _OLC1_Tarea3.com.analizador;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -42,7 +45,7 @@ namespace _OLC1_Tarea3.com.vista
 
         private void buttonReportes_Click(object sender, EventArgs e)
         {
-            if (Program.menuArchivo)
+            /*if (Program.menuArchivo)
             {
                 Program.menuArchivo = false;
                 menuArchivo.Visible = false;
@@ -57,7 +60,8 @@ namespace _OLC1_Tarea3.com.vista
             {
                 Program.menuReportes = false;
                 menuErrores.Visible = false;
-            }
+            }*/
+            Process.Start(Path.GetDirectoryName(Environment.CurrentDirectory) + "\\" + Program.pestanaActual + ".jpg");
         }
 
         private void buttonCompilar_Click(object sender, EventArgs e)
@@ -66,12 +70,12 @@ namespace _OLC1_Tarea3.com.vista
             bool resultado = true;
             foreach (TabPage pestana in tabControl.TabPages)
             {
-                /*String entrada = ((RichTextBox)pestana.Controls[0]).Text;
+                String entrada = ((RichTextBox)pestana.Controls[0]).Text;
                 bool res = Sintactico.analizar(entrada, pestana.Name);
                 if (!res)
                 {
                     resultado = false;
-                }*/
+                }
 
             }
 

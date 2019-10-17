@@ -84,6 +84,9 @@
     <Compile Include="com.vista\VentanaPrincipal.Designer.cs">
       <DependentUpon>VentanaPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="global\Entorno.cs" />
+    <Compile Include="global\Expresion.cs" />
+    <Compile Include="global\Simbolo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="com.vista\AlertaAnalisis.resx">
